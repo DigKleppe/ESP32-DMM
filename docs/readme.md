@@ -1,4 +1,4 @@
-This DMM uses an EPS23 WRoom module as base of the system.
+This DMM uses an ESP32 WRoom module as base of the system.
 The ADC is a 24 bit ADS1256. The user interface is a 2.8'' TFT and 12 capacitive touchbuttons.
 A frontend for voltage, current and Ohms completes the design.
 The volts/ohms input is protected for 500V.
