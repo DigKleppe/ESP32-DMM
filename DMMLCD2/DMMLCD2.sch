@@ -1,0 +1,332 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TFT_Displays:2.8_240x320_touch_sd_spi U1
+U 1 1 5F6BB626
+P 5550 2450
+F 0 "U1" H 5550 3465 50  0000 C CNN
+F 1 "2.8_240x320_touch_sd_spi" H 5550 3374 50  0000 C CNN
+F 2 "klp:2.8_tft_240x320_touch_sd_spi" H 5579 3160 50  0001 C CNN
+F 3 "DOCUMENTATION" H 5552 3242 50  0001 C CNN
+	1    5550 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VD #PWR?
+U 1 1 5F72ECE4
+P 2750 1800
+AR Path="/5F35D3DB/5F72ECE4" Ref="#PWR?"  Part="1" 
+AR Path="/5F3FCB1A/5F72ECE4" Ref="#PWR?"  Part="1" 
+AR Path="/5F40CAA2/5F72ECE4" Ref="#PWR?"  Part="1" 
+AR Path="/5F6FB39F/5F72ECE4" Ref="#PWR?"  Part="1" 
+AR Path="/5F487FF8/5F72ECE4" Ref="#PWR?"  Part="1" 
+AR Path="/5F72D835/5F72ECE4" Ref="#PWR?"  Part="1" 
+AR Path="/5F72ECE4" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 2750 1650 50  0001 C CNN
+F 1 "+5VD" H 2750 1950 50  0000 C CNN
+F 2 "" H 2750 1800 50  0001 C CNN
+F 3 "" H 2750 1800 50  0001 C CNN
+	1    2750 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0102
+U 1 1 5F72ECEA
+P 2900 1900
+F 0 "#PWR0102" H 2900 1650 50  0001 C CNN
+F 1 "GNDD" H 2904 1745 50  0000 C CNN
+F 2 "" H 2900 1900 50  0001 C CNN
+F 3 "" H 2900 1900 50  0001 C CNN
+	1    2900 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1900 2900 1900
+Connection ~ 2650 1900
+Text Notes 2200 1550 0    50   ~ 0
+extern LCD
+Wire Wire Line
+	2050 1800 2150 1800
+Wire Wire Line
+	2650 2000 2650 1900
+Connection ~ 2650 2000
+Wire Wire Line
+	2650 2100 2650 2000
+Wire Wire Line
+	2650 1800 2750 1800
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 5F72ECF8
+P 2050 1800
+F 0 "#PWR0103" H 2050 1650 50  0001 C CNN
+F 1 "+3.3V" H 2065 1973 50  0000 C CNN
+F 2 "" H 2050 1800 50  0001 C CNN
+F 3 "" H 2050 1800 50  0001 C CNN
+	1    2050 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2200 2150 2200
+Text Label 1800 2200 0    50   ~ 0
+DC_LCD
+Text Label 1800 1900 0    50   ~ 0
+MOSI
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1
+U 1 1 5F72ED01
+P 2350 2000
+F 0 "J1" H 2400 2300 50  0000 C CNN
+F 1 "boxed header 2x5" H 2400 2326 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 2350 2000 50  0001 C CNN
+F 3 "~" H 2350 2000 50  0001 C CNN
+	1    2350 2000
+	1    0    0    -1  
+$EndComp
+Text Label 1800 2100 0    50   ~ 0
+MISO
+Text Label 1800 2000 0    50   ~ 0
+SCK
+Text Label 2700 2200 0    50   ~ 0
+nCS_LCD
+Wire Wire Line
+	1750 2000 2150 2000
+Wire Wire Line
+	1750 2100 2150 2100
+Wire Wire Line
+	1750 1900 2150 1900
+Wire Wire Line
+	3050 2200 2650 2200
+$Comp
+L power:+3.3V #PWR0104
+U 1 1 5F7415B2
+P 4800 1700
+F 0 "#PWR0104" H 4800 1550 50  0001 C CNN
+F 1 "+3.3V" H 4815 1873 50  0000 C CNN
+F 2 "" H 4800 1700 50  0001 C CNN
+F 3 "" H 4800 1700 50  0001 C CNN
+	1    4800 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1800 4800 1700
+$Comp
+L power:+5VD #PWR?
+U 1 1 5F7415C2
+P 4650 2500
+AR Path="/5F35D3DB/5F7415C2" Ref="#PWR?"  Part="1" 
+AR Path="/5F3FCB1A/5F7415C2" Ref="#PWR?"  Part="1" 
+AR Path="/5F40CAA2/5F7415C2" Ref="#PWR?"  Part="1" 
+AR Path="/5F6FB39F/5F7415C2" Ref="#PWR?"  Part="1" 
+AR Path="/5F487FF8/5F7415C2" Ref="#PWR?"  Part="1" 
+AR Path="/5F7415C2" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 4650 2350 50  0001 C CNN
+F 1 "+5VD" H 4500 2500 50  0000 C CNN
+F 2 "" H 4650 2500 50  0001 C CNN
+F 3 "" H 4650 2500 50  0001 C CNN
+	1    4650 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2500 4800 2500
+Text Label 4200 2400 0    50   ~ 0
+SCK
+Text Label 4200 2600 0    50   ~ 0
+MISO
+Text Label 4200 2300 0    50   ~ 0
+MOSI
+Text Label 4200 2200 0    50   ~ 0
+DC_LCD
+Wire Wire Line
+	4150 2000 4800 2000
+Wire Wire Line
+	4150 2200 4800 2200
+Wire Wire Line
+	4150 2300 4800 2300
+Wire Wire Line
+	4150 2400 4800 2400
+Wire Wire Line
+	4150 2600 4800 2600
+Text Label 4200 2000 0    50   ~ 0
+nCS_LCD
+$Comp
+L TFT_Displays:2.2_240x320_sd_spi U2
+U 1 1 5F7415D8
+P 5550 4600
+F 0 "U2" H 5550 5615 50  0000 C CNN
+F 1 "2.2_240x320_sd_spi" H 5550 5524 50  0000 C CNN
+F 2 "klp:2.2_tft_240x320_sd_spi" H 5579 5310 50  0001 C CNN
+F 3 "DOCUMENTATION" H 5552 5392 50  0001 C CNN
+	1    5550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 5F74E23C
+P 4800 3850
+F 0 "#PWR0107" H 4800 3700 50  0001 C CNN
+F 1 "+3.3V" H 4815 4023 50  0000 C CNN
+F 2 "" H 4800 3850 50  0001 C CNN
+F 3 "" H 4800 3850 50  0001 C CNN
+	1    4800 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0108
+U 1 1 5F74E242
+P 4450 3850
+F 0 "#PWR0108" H 4450 3600 50  0001 C CNN
+F 1 "GNDD" H 4454 3695 50  0000 C CNN
+F 2 "" H 4450 3850 50  0001 C CNN
+F 3 "" H 4450 3850 50  0001 C CNN
+	1    4450 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3950 4800 3850
+Wire Wire Line
+	4600 3850 4450 3850
+$Comp
+L power:+5VD #PWR?
+U 1 1 5F74E24C
+P 4650 4650
+AR Path="/5F35D3DB/5F74E24C" Ref="#PWR?"  Part="1" 
+AR Path="/5F3FCB1A/5F74E24C" Ref="#PWR?"  Part="1" 
+AR Path="/5F40CAA2/5F74E24C" Ref="#PWR?"  Part="1" 
+AR Path="/5F6FB39F/5F74E24C" Ref="#PWR?"  Part="1" 
+AR Path="/5F487FF8/5F74E24C" Ref="#PWR?"  Part="1" 
+AR Path="/5F74E24C" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 4650 4500 50  0001 C CNN
+F 1 "+5VD" H 4500 4650 50  0000 C CNN
+F 2 "" H 4650 4650 50  0001 C CNN
+F 3 "" H 4650 4650 50  0001 C CNN
+	1    4650 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 4650 4800 4650
+Text Label 4200 4550 0    50   ~ 0
+SCK
+Text Label 4200 4750 0    50   ~ 0
+MISO
+Text Label 4200 4450 0    50   ~ 0
+MOSI
+Text Label 4200 4350 0    50   ~ 0
+DC_LCD
+Wire Wire Line
+	4150 4150 4800 4150
+Wire Wire Line
+	4150 4350 4800 4350
+Wire Wire Line
+	4150 4450 4800 4450
+Wire Wire Line
+	4150 4550 4800 4550
+Wire Wire Line
+	4150 4750 4800 4750
+Text Label 4200 4150 0    50   ~ 0
+nCS_LCD
+NoConn ~ 4800 2700
+NoConn ~ 4800 2800
+NoConn ~ 4800 2900
+NoConn ~ 4800 3000
+NoConn ~ 4800 3100
+NoConn ~ 6300 2800
+NoConn ~ 6300 2900
+NoConn ~ 6300 3000
+NoConn ~ 6300 3100
+NoConn ~ 6300 4750
+NoConn ~ 6300 4850
+NoConn ~ 6300 4950
+NoConn ~ 6300 5050
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5F70C20C
+P 2250 5900
+F 0 "H1" H 2350 5946 50  0000 L CNN
+F 1 "MountingHole" H 2350 5855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2250 5900 50  0001 C CNN
+F 3 "~" H 2250 5900 50  0001 C CNN
+	1    2250 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5F70C985
+P 2250 6200
+F 0 "H2" H 2350 6246 50  0000 L CNN
+F 1 "MountingHole" H 2350 6155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2250 6200 50  0001 C CNN
+F 3 "~" H 2250 6200 50  0001 C CNN
+	1    2250 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5F70CC71
+P 2250 6500
+F 0 "H3" H 2350 6546 50  0000 L CNN
+F 1 "MountingHole" H 2350 6455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2250 6500 50  0001 C CNN
+F 3 "~" H 2250 6500 50  0001 C CNN
+	1    2250 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5F70CDD6
+P 2250 6800
+F 0 "H4" H 2350 6846 50  0000 L CNN
+F 1 "MountingHole" H 2350 6755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2250 6800 50  0001 C CNN
+F 3 "~" H 2250 6800 50  0001 C CNN
+	1    2250 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0105
+U 1 1 5F7415B8
+P 4500 1700
+F 0 "#PWR0105" H 4500 1450 50  0001 C CNN
+F 1 "GNDD" H 4504 1545 50  0000 C CNN
+F 2 "" H 4500 1700 50  0001 C CNN
+F 3 "" H 4500 1700 50  0001 C CNN
+	1    4500 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1900 4650 1700
+Wire Wire Line
+	4650 1700 4500 1700
+Wire Wire Line
+	4650 1900 4800 1900
+Wire Wire Line
+	4800 1800 4750 1800
+Wire Wire Line
+	4750 1800 4750 2100
+Wire Wire Line
+	4750 2100 4800 2100
+Connection ~ 4800 1800
+Wire Wire Line
+	4600 4050 4800 4050
+Wire Wire Line
+	4600 3850 4600 4050
+Wire Wire Line
+	4800 3950 4750 3950
+Wire Wire Line
+	4750 3950 4750 4250
+Wire Wire Line
+	4750 4250 4800 4250
+Connection ~ 4800 3950
+$EndSCHEMATC
