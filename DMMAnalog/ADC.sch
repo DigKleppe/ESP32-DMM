@@ -1,0 +1,557 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L klp:ADS1256module M?
+U 1 1 5F56DD5C
+P 5600 2800
+AR Path="/5F487FF8/5F56DD5C" Ref="M?"  Part="1" 
+AR Path="/5F488018/5F56DD5C" Ref="M2"  Part="1" 
+F 0 "M2" H 5925 2965 50  0000 C CNN
+F 1 "ADS1256module" H 5925 2874 50  0000 C CNN
+F 2 "klp:ADS1256module" H 5700 3100 50  0001 C CNN
+F 3 "" H 5700 3100 50  0001 C CNN
+	1    5600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3300 6350 3300
+Wire Wire Line
+	6750 3100 6350 3100
+Wire Wire Line
+	6750 3400 6350 3400
+Wire Wire Line
+	6350 3500 6750 3500
+Wire Wire Line
+	6750 3200 6350 3200
+$Comp
+L power:+5VD #PWR?
+U 1 1 5F56DD6C
+P 6550 2900
+AR Path="/5F35D3DB/5F56DD6C" Ref="#PWR?"  Part="1" 
+AR Path="/5F3FCB1A/5F56DD6C" Ref="#PWR?"  Part="1" 
+AR Path="/5F40CAA2/5F56DD6C" Ref="#PWR?"  Part="1" 
+AR Path="/5F6FB39F/5F56DD6C" Ref="#PWR?"  Part="1" 
+AR Path="/5F487FF8/5F56DD6C" Ref="#PWR?"  Part="1" 
+AR Path="/5F488018/5F56DD6C" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 6550 2750 50  0001 C CNN
+F 1 "+5VD" H 6565 3073 50  0000 C CNN
+F 2 "" H 6550 2900 50  0001 C CNN
+F 3 "" H 6550 2900 50  0001 C CNN
+	1    6550 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5F56DD72
+P 7000 2700
+AR Path="/5F487FF8/5F56DD72" Ref="#PWR?"  Part="1" 
+AR Path="/5F488018/5F56DD72" Ref="#PWR096"  Part="1" 
+F 0 "#PWR096" H 7000 2450 50  0001 C CNN
+F 1 "GNDD" H 7004 2545 50  0000 C CNN
+F 2 "" H 7000 2700 50  0001 C CNN
+F 3 "" H 7000 2700 50  0001 C CNN
+	1    7000 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2900 6550 2900
+Wire Wire Line
+	6350 3000 6800 3000
+Wire Wire Line
+	6350 3950 6450 3950
+Wire Wire Line
+	6350 3850 6450 3850
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F56DD7D
+P 6650 3800
+AR Path="/5F487FF8/5F56DD7D" Ref="#PWR?"  Part="1" 
+AR Path="/5F488018/5F56DD7D" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 6650 3650 50  0001 C CNN
+F 1 "+3.3V" H 6665 3973 50  0000 C CNN
+F 2 "" H 6650 3800 50  0001 C CNN
+F 3 "" H 6650 3800 50  0001 C CNN
+	1    6650 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3600 6550 3600
+Wire Wire Line
+	6550 3600 6550 3800
+Wire Wire Line
+	6550 3800 6650 3800
+Wire Wire Line
+	5500 3000 5350 3000
+Wire Wire Line
+	5350 3000 5350 3200
+Wire Wire Line
+	5500 3200 5350 3200
+Connection ~ 5350 3200
+Wire Wire Line
+	5350 3200 5350 3400
+Wire Wire Line
+	5500 3400 5350 3400
+Connection ~ 5350 3400
+Wire Wire Line
+	5350 3400 5350 3600
+Wire Wire Line
+	5500 3600 5350 3600
+Connection ~ 5350 3600
+Wire Wire Line
+	5350 3600 5350 3800
+Wire Wire Line
+	5500 3800 5350 3800
+Connection ~ 5350 3800
+Wire Wire Line
+	5350 3800 5350 4000
+Wire Wire Line
+	5500 4000 5350 4000
+Connection ~ 5350 4000
+Wire Wire Line
+	5350 4000 5350 4200
+Wire Wire Line
+	5500 4200 5350 4200
+Connection ~ 5350 4200
+Wire Wire Line
+	5350 4200 5350 4400
+Wire Wire Line
+	5500 4400 5350 4400
+$Comp
+L power:GNDA #PWR?
+U 1 1 5F56DD9D
+P 5350 4400
+AR Path="/5F3FCB1A/5F56DD9D" Ref="#PWR?"  Part="1" 
+AR Path="/5F487FF8/5F56DD9D" Ref="#PWR?"  Part="1" 
+AR Path="/5F488018/5F56DD9D" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 5350 4150 50  0001 C CNN
+F 1 "GNDA" H 5355 4227 50  0000 C CNN
+F 2 "" H 5350 4400 50  0001 C CNN
+F 3 "" H 5350 4400 50  0001 C CNN
+	1    5350 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F56DDA3
+P 5050 2900
+AR Path="/5F3FCB1A/5F56DDA3" Ref="TP?"  Part="1" 
+AR Path="/5F487FF8/5F56DDA3" Ref="TP?"  Part="1" 
+AR Path="/5F488018/5F56DDA3" Ref="TP34"  Part="1" 
+F 0 "TP34" H 4950 3150 50  0000 L CNN
+F 1 "TestPoint" H 5108 2927 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 5250 2900 50  0001 C CNN
+F 3 "~" H 5250 2900 50  0001 C CNN
+	1    5050 2900
+	1    0    0    -1  
+$EndComp
+Text HLabel 4950 3100 0    50   Input ~ 0
+channel_1
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F56DDAB
+P 5050 3100
+AR Path="/5F3FCB1A/5F56DDAB" Ref="TP?"  Part="1" 
+AR Path="/5F487FF8/5F56DDAB" Ref="TP?"  Part="1" 
+AR Path="/5F488018/5F56DDAB" Ref="TP35"  Part="1" 
+F 0 "TP35" H 5100 3200 50  0000 L CNN
+F 1 "TestPoint" H 5108 3127 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 5250 3100 50  0001 C CNN
+F 3 "~" H 5250 3100 50  0001 C CNN
+	1    5050 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 3100
+Wire Wire Line
+	5050 3100 5500 3100
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F56DDB5
+P 5050 3300
+AR Path="/5F3FCB1A/5F56DDB5" Ref="TP?"  Part="1" 
+AR Path="/5F487FF8/5F56DDB5" Ref="TP?"  Part="1" 
+AR Path="/5F488018/5F56DDB5" Ref="TP36"  Part="1" 
+F 0 "TP36" H 5100 3400 50  0000 L CNN
+F 1 "TestPoint" H 5108 3327 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 5250 3300 50  0001 C CNN
+F 3 "~" H 5250 3300 50  0001 C CNN
+	1    5050 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3300 5500 3300
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F56DDBF
+P 5050 3500
+AR Path="/5F3FCB1A/5F56DDBF" Ref="TP?"  Part="1" 
+AR Path="/5F487FF8/5F56DDBF" Ref="TP?"  Part="1" 
+AR Path="/5F488018/5F56DDBF" Ref="TP37"  Part="1" 
+F 0 "TP37" H 5100 3600 50  0000 L CNN
+F 1 "TestPoint" H 5108 3527 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 5250 3500 50  0001 C CNN
+F 3 "~" H 5250 3500 50  0001 C CNN
+	1    5050 3500
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 3500
+Wire Wire Line
+	5050 3500 5500 3500
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F56DDC9
+P 5050 3700
+AR Path="/5F3FCB1A/5F56DDC9" Ref="TP?"  Part="1" 
+AR Path="/5F487FF8/5F56DDC9" Ref="TP?"  Part="1" 
+AR Path="/5F488018/5F56DDC9" Ref="TP38"  Part="1" 
+F 0 "TP38" H 5100 3800 50  0000 L CNN
+F 1 "TestPoint" H 5108 3727 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 5250 3700 50  0001 C CNN
+F 3 "~" H 5250 3700 50  0001 C CNN
+	1    5050 3700
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 3700
+Wire Wire Line
+	5050 3700 5500 3700
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F56DDD3
+P 5050 3900
+AR Path="/5F3FCB1A/5F56DDD3" Ref="TP?"  Part="1" 
+AR Path="/5F487FF8/5F56DDD3" Ref="TP?"  Part="1" 
+AR Path="/5F488018/5F56DDD3" Ref="TP40"  Part="1" 
+F 0 "TP40" H 5100 4000 50  0000 L CNN
+F 1 "TestPoint" H 5108 3927 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 5250 3900 50  0001 C CNN
+F 3 "~" H 5250 3900 50  0001 C CNN
+	1    5050 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 3900
+Wire Wire Line
+	5050 3900 5500 3900
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F56DDDD
+P 5050 4100
+AR Path="/5F3FCB1A/5F56DDDD" Ref="TP?"  Part="1" 
+AR Path="/5F487FF8/5F56DDDD" Ref="TP?"  Part="1" 
+AR Path="/5F488018/5F56DDDD" Ref="TP41"  Part="1" 
+F 0 "TP41" H 5100 4200 50  0000 L CNN
+F 1 "TestPoint" H 5108 4127 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 5250 4100 50  0001 C CNN
+F 3 "~" H 5250 4100 50  0001 C CNN
+	1    5050 4100
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 4100
+Wire Wire Line
+	5050 4100 5500 4100
+Wire Wire Line
+	5000 4300 5050 4300
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F56DDE7
+P 5050 4300
+AR Path="/5F3FCB1A/5F56DDE7" Ref="TP?"  Part="1" 
+AR Path="/5F487FF8/5F56DDE7" Ref="TP?"  Part="1" 
+AR Path="/5F488018/5F56DDE7" Ref="TP42"  Part="1" 
+F 0 "TP42" H 5100 4400 50  0000 L CNN
+F 1 "TestPoint" H 5108 4327 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 5250 4300 50  0001 C CNN
+F 3 "~" H 5250 4300 50  0001 C CNN
+	1    5050 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 4300
+Wire Wire Line
+	5050 4300 5500 4300
+Connection ~ 5350 4400
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F56DDF8
+P 9200 3800
+AR Path="/5F3FCB1A/5F56DDF8" Ref="TP?"  Part="1" 
+AR Path="/5F488018/5F56DDF8" Ref="TP39"  Part="1" 
+F 0 "TP39" H 9100 4050 50  0000 L CNN
+F 1 "TestPoint" H 9258 3827 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 9400 3800 50  0001 C CNN
+F 3 "~" H 9400 3800 50  0001 C CNN
+	1    9200 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L klp:OPA2182ID U?
+U 2 1 5F56DDFF
+P 7600 4000
+AR Path="/5F35D3DB/5F56DDFF" Ref="U?"  Part="3" 
+AR Path="/5F3FCB1A/5F56DDFF" Ref="U?"  Part="1" 
+AR Path="/5F488018/5F56DDFF" Ref="U10"  Part="2" 
+AR Path="/5F487FF8/5F56DDFF" Ref="U?"  Part="2" 
+F 0 "U10" H 7650 4075 50  0000 C CNN
+F 1 "OPA2182ID" H 7650 4166 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7800 3500 50  0001 C CNN
+F 3 "" H 7800 3500 50  0001 C CNN
+	2    7600 4000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8050 3450 8050 3800
+Wire Wire Line
+	8050 3800 7950 3800
+Wire Wire Line
+	7350 3700 7350 3450
+Connection ~ 8050 3800
+Connection ~ 5050 2900
+Wire Wire Line
+	5050 2900 5500 2900
+Wire Wire Line
+	4750 2900 5050 2900
+$Comp
+L Device:Thermistor_NTC TH1
+U 1 1 5F57E39A
+P 4400 5250
+F 0 "TH1" H 4497 5296 50  0000 L CNN
+F 1 "10k" H 4497 5205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 4400 5300 50  0001 C CNN
+F 3 "~" H 4400 5300 50  0001 C CNN
+	1    4400 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F58C9A8
+P 4400 4850
+AR Path="/5F58C9A8" Ref="R?"  Part="1" 
+AR Path="/5F35D3DB/5F58C9A8" Ref="R?"  Part="1" 
+AR Path="/5F488018/5F58C9A8" Ref="R72"  Part="1" 
+F 0 "R72" H 4550 4850 50  0000 C CNN
+F 1 "10k" H 4250 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4330 4850 50  0001 C CNN
+F 3 "~" H 4400 4850 50  0001 C CNN
+	1    4400 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5F592F4E
+P 4400 5450
+AR Path="/5F3FCB1A/5F592F4E" Ref="#PWR?"  Part="1" 
+AR Path="/5F487FF8/5F592F4E" Ref="#PWR?"  Part="1" 
+AR Path="/5F488018/5F592F4E" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 4400 5200 50  0001 C CNN
+F 1 "GNDA" H 4405 5277 50  0000 C CNN
+F 2 "" H 4400 5450 50  0001 C CNN
+F 3 "" H 4400 5450 50  0001 C CNN
+	1    4400 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4650 4400 4700
+Wire Wire Line
+	4400 5000 4400 5050
+Wire Wire Line
+	4400 5400 4400 5450
+Wire Wire Line
+	5000 4300 5000 5050
+Wire Wire Line
+	5000 5050 4400 5050
+Connection ~ 4400 5050
+Wire Wire Line
+	4400 5050 4400 5100
+Text HLabel 6750 3100 2    50   Input ~ 0
+SCK
+Text HLabel 6750 3200 2    50   Input ~ 0
+MOSI
+Text HLabel 6750 3300 2    50   Output ~ 0
+MISO
+Text HLabel 6750 3400 2    50   Output ~ 0
+nDR_ADC
+Text HLabel 6750 3500 2    50   Input ~ 0
+nCS_ADC
+Wire Wire Line
+	7000 2700 6800 2700
+Wire Wire Line
+	6800 2700 6800 3000
+$Comp
+L Device:CP C?
+U 1 1 5F5BF850
+P 8250 4000
+AR Path="/5F6FB39F/5F5BF850" Ref="C?"  Part="1" 
+AR Path="/5F488018/5F5BF850" Ref="C39"  Part="1" 
+F 0 "C39" H 8368 4046 50  0000 L CNN
+F 1 "10uV16" H 8368 3955 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 8288 3850 50  0001 C CNN
+F 3 "~" H 8250 4000 50  0001 C CNN
+	1    8250 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F5C1F19
+P 8850 4000
+AR Path="/5F35D3DB/5F5C1F19" Ref="C?"  Part="1" 
+AR Path="/5F3FCB1A/5F5C1F19" Ref="C?"  Part="1" 
+AR Path="/5F6FB39F/5F5C1F19" Ref="C?"  Part="1" 
+AR Path="/5F488018/5F5C1F19" Ref="C40"  Part="1" 
+F 0 "C40" H 8965 4046 50  0000 L CNN
+F 1 "100n" H 8965 3955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8888 3850 50  0001 C CNN
+F 3 "~" H 8850 4000 50  0001 C CNN
+	1    8850 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5F5C50C9
+P 8550 4150
+AR Path="/5F3FCB1A/5F5C50C9" Ref="#PWR?"  Part="1" 
+AR Path="/5F487FF8/5F5C50C9" Ref="#PWR?"  Part="1" 
+AR Path="/5F488018/5F5C50C9" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 8550 3900 50  0001 C CNN
+F 1 "GNDA" H 8555 3977 50  0000 C CNN
+F 2 "" H 8550 4150 50  0001 C CNN
+F 3 "" H 8550 4150 50  0001 C CNN
+	1    8550 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 4150 8550 4150
+Wire Wire Line
+	8500 3650 8500 3800
+Wire Wire Line
+	8050 3800 8250 3800
+Connection ~ 8500 3800
+Wire Wire Line
+	7350 3450 8050 3450
+Wire Wire Line
+	8500 3800 8850 3800
+Connection ~ 8550 4150
+Wire Wire Line
+	8550 4150 8850 4150
+Text Label 4650 3500 0    50   ~ 0
+channel3
+Text Label 4650 3700 0    50   ~ 0
+channel4
+Text Label 4650 3900 0    50   ~ 0
+channel5
+Text Label 4650 4100 0    50   ~ 0
+channel6
+Wire Wire Line
+	4650 4100 5050 4100
+Wire Wire Line
+	4650 3900 5050 3900
+Wire Wire Line
+	4650 3700 5050 3700
+Wire Wire Line
+	4650 3500 5050 3500
+Wire Wire Line
+	8250 3850 8250 3800
+Connection ~ 8250 3800
+Wire Wire Line
+	8250 3800 8500 3800
+Wire Wire Line
+	8850 3850 8850 3800
+Connection ~ 8850 3800
+$Comp
+L klp:+2.5Vref #PWR0110
+U 1 1 5F770CF6
+P 8500 3550
+F 0 "#PWR0110" H 8500 3550 50  0001 C CNN
+F 1 "+2.5Vref" H 8500 3623 50  0000 C CNN
+F 2 "" H 8500 3550 50  0001 C CNN
+F 3 "" H 8500 3550 50  0001 C CNN
+	1    8500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L klp:+2.5Vref #PWR0115
+U 1 1 5F77D9B6
+P 4400 4550
+F 0 "#PWR0115" H 4400 4550 50  0001 C CNN
+F 1 "+2.5Vref" H 4400 4623 50  0000 C CNN
+F 2 "" H 4400 4550 50  0001 C CNN
+F 3 "" H 4400 4550 50  0001 C CNN
+	1    4400 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L klp:+2.5Vref #PWR0103
+U 1 1 5F782ECD
+P 4750 2800
+F 0 "#PWR0103" H 4750 2800 50  0001 C CNN
+F 1 "+2.5Vref" H 4750 2873 50  0000 C CNN
+F 2 "" H 4750 2800 50  0001 C CNN
+F 3 "" H 4750 2800 50  0001 C CNN
+	1    4750 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3850 6450 3900
+Wire Wire Line
+	7350 3900 6450 3900
+Connection ~ 6450 3900
+Wire Wire Line
+	6450 3900 6450 3950
+$Comp
+L klp:BAT754S D?
+U 1 1 5F5D1D97
+P 9600 3800
+AR Path="/5F3FCB1A/5F5D1D97" Ref="D?"  Part="1" 
+AR Path="/5F488018/5F5D1D97" Ref="D16"  Part="1" 
+F 0 "D16" H 9625 4025 50  0000 C CNN
+F 1 "BAT754S" H 9625 3934 50  0000 C CNN
+F 2 "klp:SOT-23-handsolder" H 10550 3300 50  0001 C CNN
+F 3 "" H 9600 3800 50  0001 C CNN
+	1    9600 3800
+	0    1    -1   0   
+$EndComp
+NoConn ~ 9600 4100
+$Comp
+L power:+5VD #PWR?
+U 1 1 5F5D58D6
+P 9600 3450
+AR Path="/5F35D3DB/5F5D58D6" Ref="#PWR?"  Part="1" 
+AR Path="/5F3FCB1A/5F5D58D6" Ref="#PWR?"  Part="1" 
+AR Path="/5F40CAA2/5F5D58D6" Ref="#PWR?"  Part="1" 
+AR Path="/5F6FB39F/5F5D58D6" Ref="#PWR?"  Part="1" 
+AR Path="/5F487FF8/5F5D58D6" Ref="#PWR?"  Part="1" 
+AR Path="/5F488018/5F5D58D6" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 9600 3300 50  0001 C CNN
+F 1 "+5VD" H 9615 3623 50  0000 C CNN
+F 2 "" H 9600 3450 50  0001 C CNN
+F 3 "" H 9600 3450 50  0001 C CNN
+	1    9600 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 4150 9600 4100
+Wire Wire Line
+	8850 4150 9600 4150
+Connection ~ 8850 4150
+Wire Wire Line
+	9400 3800 9200 3800
+Connection ~ 9200 3800
+Wire Wire Line
+	9200 3800 8850 3800
+Text HLabel 4950 3300 0    50   Input ~ 0
+channel_2
+Wire Wire Line
+	4950 3100 5050 3100
+Wire Wire Line
+	4950 3300 5050 3300
+Connection ~ 5050 3300
+$EndSCHEMATC
